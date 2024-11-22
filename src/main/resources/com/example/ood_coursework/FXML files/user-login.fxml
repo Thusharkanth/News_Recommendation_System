@@ -1,22 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e1f5fe;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ood_coursework.FXML files.UserLoginController">
-
-    <!-- Header -->
-    <VBox alignment="CENTER" layoutX="20" layoutY="50" prefHeight="357.0" prefWidth="301.0" spacing="20" style="-fx-padding: 50;">
-        <Label style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #333333;" text="User Login" />
+<AnchorPane prefHeight="461.0" prefWidth="454.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ood_coursework.FXML files.UserLoginController">
+   <ImageView fitHeight="471.0" fitWidth="453.0" layoutY="-6.0">
+      <image>
+         <Image url="@../../../../../../../../../Interface/vecteezy_global-network-connection-world-map-point-and-line_7160620.jpg" />
+      </image>
+   </ImageView>
 
         <!-- Username and Password Fields -->
-        <TextField fx:id="usernameField" prefWidth="200" promptText="Username" style="-fx-font-size: 14px; -fx-padding: 5px; -fx-background-color: white;" />
-        <PasswordField fx:id="passwordField" prefWidth="200" promptText="Password" style="-fx-font-size: 14px; -fx-padding: 5px; -fx-background-color: white;" />
+        <TextField fx:id="usernameField" layoutX="105.0" layoutY="130.0" prefHeight="30.0" prefWidth="242.0" promptText="Username" style="-fx-font-size: 14px; -fx-padding: 5px; -fx-background-color: white;" />
+        <PasswordField fx:id="passwordField" layoutX="105.0" layoutY="177.0" prefHeight="30.0" prefWidth="241.0" promptText="Password" style="-fx-font-size: 14px; -fx-padding: 5px; -fx-background-color: white;" />
 
-        <Button fx:id="loginButton" prefWidth="200" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 14px;" text="Login" />
-        <Button fx:id="backButton" prefWidth="200" style="-fx-background-color: #f44336; -fx-text-fill: white; -fx-font-size: 14px;" text="Back to Welcome Page" />
-        <Button fx:id="createAccountButton" prefWidth="200" style="-fx-background-color: #f44336; -fx-text-fill: white; -fx-font-size: 14px;" text="Create an account " />
+        <Button fx:id="loginButton" layoutX="127.0" layoutY="236.0" opacity="0.75" prefHeight="42.0" prefWidth="200" style="-fx-background-color: #dee0e3;" text="Login">
+      <font>
+         <Font name="Arial Black" size="20.0" />
+      </font></Button>
+   <Text layoutX="112.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login" textAlignment="CENTER" wrappingWidth="228.72625732421875">
+      <font>
+         <Font name="System Bold" size="45.0" />
+      </font>
+      <fill>
+         <LinearGradient endX="0.8863636363636364" endY="0.17045446056308164" startX="1.0" startY="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </fill>
+   </Text>
+   <Button fx:id="loginButton1" layoutX="126.0" layoutY="363.0" opacity="0.88" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #dee0e3;" text="Create an account ">
+      <font>
+         <Font name="Arial Black" size="15.0" />
+      </font>
+   </Button>
+   <Button fx:id="loginButton11" layoutX="127.0" layoutY="298.0" opacity="0.75" prefWidth="200" style="-fx-background-color: #dee0e3;" text="Welcome Page ">
+      <font>
+         <Font name="Arial Black" size="20.0" />
+      </font>
+   </Button>
 
-    </VBox>
+
 
 </AnchorPane>

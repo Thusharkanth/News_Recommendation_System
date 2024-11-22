@@ -1,56 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<?import javafx.collections.FXCollections?>
-<?import java.lang.String?>
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.ood_coursework.FXML files.AdminDashboardController"
-            prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #fafafa;">
-
-    <!-- Header -->
-    <HBox spacing="10" alignment="CENTER" style="-fx-padding: 10; -fx-background-color: #336699;">
-        <Label text="Admin Dashboard" style="-fx-font-size: 20; -fx-text-fill: white;"/>
-        <Button text="Logout" fx:id="logoutButton" style="-fx-background-color: #ff6666; -fx-text-fill: white;"/>
-    </HBox>
-
-    <!-- Admin Options -->
-    <VBox spacing="20" alignment="CENTER" style="-fx-padding: 50;" layoutY="100" layoutX="50">
-        <Button text="Add New Article" fx:id="addArticleButton" prefWidth="200" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 14px;"/>
-        <Button text="Edit/Delete Article" fx:id="editDeleteArticleButton" prefWidth="200" style="-fx-background-color: #FFC107; -fx-text-fill: white; -fx-font-size: 14px;"/>
-        <Button text="View User " fx:id="viewUserButton" prefWidth="200" style="-fx-background-color: #FFC107; -fx-text-fill: white; -fx-font-size: 14px;"/>
-    </VBox>
-
-    <!-- Add New Article Form (Initially Hidden) -->
-    <VBox spacing="10" alignment="CENTER" style="-fx-padding: 20;" layoutY="250" layoutX="50" fx:id="addArticleForm" visible="false">
-        <TextField fx:id="articleTitleField" promptText="Title" prefWidth="400"/>
-        <TextArea fx:id="articleContentField" promptText="Content" prefHeight="150" prefWidth="400"/>
-        <ComboBox fx:id="categoryComboBox" prefWidth="200">
-            <items>
-                <FXCollections fx:factory="observableArrayList">
-                    <String fx:value="Technology"/>
-                    <String fx:value="Health"/>
-                    <String fx:value="Sports"/>
-                    <String fx:value="AI"/>
-                </FXCollections>
-            </items>
-        </ComboBox>
-        <Button text="Save Article" fx:id="saveArticleButton" prefWidth="200"/>
-    </VBox>
-
-    <!-- Table View for Articles (Initially Hidden) -->
-    <VBox spacing="10" alignment="CENTER" style="-fx-padding: 20;" layoutY="250" layoutX="50" fx:id="articleTableView" visible="false">
-        <TableView fx:id="articleTable" prefWidth="600" prefHeight="250">
-            <columns>
-                <TableColumn text="Title" fx:id="titleColumn" prefWidth="300"/>
-                <TableColumn text="Edit" fx:id="editColumn" prefWidth="150"/>
-                <TableColumn text="Delete" fx:id="deleteColumn" prefWidth="150"/>
-            </columns>
-        </TableView>
-    </VBox>
+<AnchorPane prefHeight="494.0" prefWidth="652.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ood_coursework.FXML files.AdminDashboardController">
+   <ImageView fitHeight="575.0" fitWidth="736.0" layoutX="-84.0" layoutY="-80.0">
+      <image>
+         <Image url="@../../../../../../../../../Interface/vecteezy_dark-blue-digital-technology-background-futuristic_.jpg" />
+      </image>
+   </ImageView>
+        <Button fx:id="viewUserButton" layoutX="100.0" layoutY="331.0" opacity="0.75" prefHeight="42.0" prefWidth="234.0" style="-fx-background-color: #dee0e3;" text="View User ">
+      <font>
+         <Font name="Arial Black" size="20.0" />
+      </font></Button>
+   
+     <Label layoutX="25.0" layoutY="22.0" text="Admin Dashboard">
+      <font>
+         <Font name="System Bold" size="50.0" />
+      </font>
+      <textFill>
+         <LinearGradient endX="1.0" endY="0.734848475817478" startX="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </textFill>
+   </Label>
+     <Button fx:id="logoutButton" layoutX="272.0" layoutY="403.0" opacity="0.77" prefHeight="34.0" prefWidth="66.0" style="-fx-background-color: #ff6666;" text="Logout" textFill="#fffdfd">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Button>
+   <Text layoutX="25.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome... " textAlignment="CENTER">
+      <font>
+         <Font name="System Bold" size="40.0" />
+      </font>
+      <fill>
+         <LinearGradient endX="0.8939393505905614" endY="1.0" startX="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </fill>
+   </Text>
+   <Button fx:id="viewUserButton1" layoutX="100.0" layoutY="260.0" opacity="0.75" prefHeight="42.0" prefWidth="234.0" style="-fx-background-color: #dee0e3;" text="Edit/Delete  ">
+      <font>
+         <Font name="Arial Black" size="20.0" />
+      </font>
+   </Button>
+   <Button fx:id="viewUserButton11" layoutX="100.0" layoutY="199.0" opacity="0.75" prefHeight="42.0" prefWidth="233.0" style="-fx-background-color: #dee0e3;" text="Add Articles">
+      <font>
+         <Font name="Arial Black" size="20.0" />
+      </font>
+   </Button>
 
 </AnchorPane>

@@ -1,51 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
 
-<?import javafx.collections.FXCollections?>
-<?import java.lang.String?>
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.ood_coursework.FXML files.EditDeleteArticleController"
-            prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #fafafa;">
+<AnchorPane prefHeight="278.0" prefWidth="790.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ood_coursework.FXML files.EditDeleteArticleController">
+   <ImageView fitHeight="391.0" fitWidth="799.0">
+      <image>
+         <Image url="@../../../../../../../../../Interface/vecteezy_dark-blue-digital-technology-background-futuristic_.jpg" />
+      </image>
+   </ImageView>
 
     <!-- Header -->
-    <HBox spacing="10" alignment="CENTER" style="-fx-padding: 10; -fx-background-color: #336699;">
-        <Label text="Edit/Delete Articles" style="-fx-font-size: 20; -fx-text-fill: white;"/>
-        <Button text="Back to Dashboard" fx:id="backButton" style="-fx-background-color: #ff6666; -fx-text-fill: white;"/>
-    </HBox>
+
+        <Label layoutX="66.0" layoutY="27.0" text="Edit/Delete Articles...">
+      <font>
+         <Font name="System Bold" size="50.0" />
+      </font>
+      <textFill>
+         <LinearGradient endX="0.8143940260916045" endY="0.250000050573638" startX="0.833333306240313" startY="0.8939393957455953">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </textFill></Label>
+        <Button fx:id="backButton" layoutX="639.0" layoutY="44.0" prefHeight="38.0" prefWidth="133.0" style="-fx-background-color: #ff6666; -fx-text-fill: white;" text="Back to Dashboard">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font></Button>
+
 
     <!-- Table View for Articles -->
-    <VBox spacing="10" alignment="CENTER" style="-fx-padding: 20;" layoutY="100" layoutX="50">
-        <TableView fx:id="articleTableView" prefWidth="700" prefHeight="250">
+    <VBox alignment="CENTER" layoutX="50" layoutY="100" prefHeight="266.0" prefWidth="715.0" spacing="10" style="-fx-padding: 20;">
+        <TableView fx:id="articleTableView" prefHeight="239.0" prefWidth="693.0">
             <columns>
-                <TableColumn text="Title" fx:id="titleColumn" prefWidth="300"/>
-                <TableColumn text="Edit" fx:id="editColumn" prefWidth="150"/>
-                <TableColumn text="Delete" fx:id="deleteColumn" prefWidth="150"/>
+                <TableColumn fx:id="titleColumn" prefWidth="300" text="Title" />
+                <TableColumn fx:id="editColumn" prefWidth="150" text="Edit" />
+                <TableColumn fx:id="deleteColumn" prefWidth="150" text="Delete" />
             </columns>
         </TableView>
-    </VBox>
-
-    <!-- Edit Article Form (Initially Hidden) -->
-    <VBox spacing="10" alignment="CENTER" style="-fx-padding: 20;" layoutY="400" layoutX="50" fx:id="editArticleForm" visible="false">
-        <TextField fx:id="articleTitleField" promptText="Title" prefWidth="400"/>
-        <TextArea fx:id="articleContentField" promptText="Content" prefHeight="150" prefWidth="400"/>
-        <ComboBox fx:id="categoryComboBox" prefWidth="200">
-            <items>
-                <FXCollections fx:factory="observableArrayList">
-                    <String fx:value="Technology"/>
-                    <String fx:value="Health"/>
-                    <String fx:value="Sports"/>
-                    <String fx:value="AI"/>
-                    <!-- Add more categories if needed -->
-                </FXCollections>
-            </items>
-        </ComboBox>
-        <Button text="Save Changes" fx:id="saveChangesButton" prefWidth="200" style="-fx-background-color: #4CAF50; -fx-text-fill: white;"/>
-        <Button text="Cancel" fx:id="cancelButton" prefWidth="200" style="-fx-background-color: #f44336; -fx-text-fill: white;"/>
     </VBox>
 
 </AnchorPane>

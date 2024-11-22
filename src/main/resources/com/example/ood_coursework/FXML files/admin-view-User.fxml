@@ -1,36 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.ood_coursework.FXML files.ViewUsersController"
-            prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #fafafa;">
+<AnchorPane prefHeight="572.0" prefWidth="805.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ood_coursework.FXML files.ViewUsersController">
+   <ImageView fitHeight="607.0" fitWidth="818.0" layoutX="-13.0" layoutY="-23.0">
+      <image>
+         <Image url="@../../../../../../../../../Interface/vecteezy_dark-blue-digital-technology-background-futuristic_.jpg" />
+      </image>
+   </ImageView>
 
     <!-- Header -->
-    <HBox spacing="10" alignment="CENTER" style="-fx-padding: 10; -fx-background-color: #336699;">
-        <Label text="View Users" style="-fx-font-size: 20; -fx-text-fill: white;"/>
-        <Button text="Back to Dashboard" fx:id="backButton" style="-fx-background-color: #ff6666; -fx-text-fill: white;"/>
-    </HBox>
+
+        <Label layoutX="53.0" layoutY="14.0" text="User Details... ">
+      <font>
+         <Font name="System Bold" size="51.0" />
+      </font>
+      <textFill>
+         <LinearGradient endX="0.8153409090909091" endY="0.136363578565193" startX="0.8636363491867528" startY="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </textFill></Label>
+        <Button fx:id="backButton" layoutX="641.0" layoutY="31.0" opacity="0.81" prefHeight="39.0" prefWidth="134.0" style="-fx-background-color: #ff6666; -fx-text-fill: white;" text="Back to Dashboard" textAlignment="CENTER">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font></Button>
+
 
     <!-- Table View for Users -->
-    <VBox spacing="10" alignment="CENTER" style="-fx-padding: 20;" layoutY="100" layoutX="50">
-        <TableView fx:id="userTableView" prefWidth="700" prefHeight="250">
+
+        <TableView fx:id="userTableView" layoutX="29.0" layoutY="142.0" prefHeight="261.0" prefWidth="747.0">
             <columns>
-                <TableColumn text="Username" fx:id="usernameColumn" prefWidth="200"/>
-                <TableColumn text="Email" fx:id="emailColumn" prefWidth="200"/>
-                <TableColumn text="Actions" fx:id="actionColumn" prefWidth="300"/>
+                <TableColumn fx:id="usernameColumn" prefWidth="200" text="Username" />
+                <TableColumn fx:id="emailColumn" prefWidth="200" text="Email" />
+                <TableColumn fx:id="actionColumn" prefWidth="300" text="Actions" />
             </columns>
         </TableView>
-    </VBox>
+
 
     <!-- User Details (Optional) -->
-    <VBox spacing="15" alignment="CENTER" style="-fx-padding: 20;" layoutY="400" layoutX="50">
-        <Label text="User Details:" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
-        <Label fx:id="userDetailsLabel" style="-fx-font-size: 14px;"/>
+    <VBox alignment="CENTER" layoutX="45.0" layoutY="425.0" spacing="15" style="-fx-padding: 20;">
+        <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="User Details:" textFill="#faf4f4" />
+        <Label fx:id="userDetailsLabel" style="-fx-font-size: 14px;" />
     </VBox>
 
 </AnchorPane>
