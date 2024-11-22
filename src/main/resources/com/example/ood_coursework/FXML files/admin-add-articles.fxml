@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.ood_coursework.FXML files.AddArticleController"
+            prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f0f0f0;">
+
+    <!-- Header -->
+    <HBox spacing="10" alignment="CENTER" style="-fx-padding: 10; -fx-background-color: #336699;">
+        <Label text="Add New Article" style="-fx-font-size: 20; -fx-text-fill: white;"/>
+        <Button text="Back to Dashboard" fx:id="backButton" style="-fx-background-color: #ff6666; -fx-text-fill: white;"/>
+    </HBox>
+
+    <!-- Add Article Form -->
+    <VBox spacing="20" alignment="CENTER" style="-fx-padding: 50;" layoutY="50" layoutX="50">
+        <!-- Article Title -->
+        <TextField fx:id="articleTitleField" promptText="Article Title" prefWidth="400" style="-fx-font-size: 14px; -fx-padding: 5px;"/>
+
+        <!-- Article Content -->
+        <TextArea fx:id="articleContentField" promptText="Content" prefHeight="150" prefWidth="400" style="-fx-font-size: 14px; -fx-padding: 5px;"/>
+
+        <!-- Article Category -->
+        <ComboBox fx:id="categoryComboBox" prefWidth="200" style="-fx-font-size: 14px;">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Technology"/>
+                    <String fx:value="Health"/>
+                    <String fx:value="Sports"/>
+                    <String fx:value="AI"/>
+                    <!-- You can add more categories here -->
+                </FXCollections>
+            </items>
+        </ComboBox>
+
+        <!-- Save Button -->
+        <Button text="Save Article" fx:id="saveArticleButton" prefWidth="200" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 14px;"/>
+    </VBox>
+
+</AnchorPane>

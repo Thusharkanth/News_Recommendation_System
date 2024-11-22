@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.ood_coursework.FXML files.CreateAccountController"
+            prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e1f5fe;">
+
+    <!-- Header -->
+    <HBox spacing="10" alignment="CENTER" style="-fx-padding: 10; -fx-background-color: #336699;">
+        <Label text="Create an Account" style="-fx-font-size: 20; -fx-text-fill: white;"/>
+        <Button text="Back to Login" fx:id="backToLoginButton" style="-fx-background-color: #ff6666; -fx-text-fill: white;"/>
+    </HBox>
+
+    <!-- Create Account Form -->
+    <VBox spacing="20" alignment="CENTER" style="-fx-padding: 50;" layoutY="50" layoutX="50">
+        <TextField fx:id="usernameField" promptText="Username" prefWidth="400" style="-fx-font-size: 14px; -fx-padding: 5px;"/>
+        <TextField fx:id="emailField" promptText="Email" prefWidth="400" style="-fx-font-size: 14px; -fx-padding: 5px;"/>
+        <PasswordField fx:id="passwordField" promptText="Password" prefWidth="400" style="-fx-font-size: 14px; -fx-padding: 5px;"/>
+        <PasswordField fx:id="confirmPasswordField" promptText="Confirm Password" prefWidth="400" style="-fx-font-size: 14px; -fx-padding: 5px;"/>
+
+        <Button text="Create Account" fx:id="createAccountButton" prefWidth="200" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 14px;"/>
+    </VBox>
+
+</AnchorPane>

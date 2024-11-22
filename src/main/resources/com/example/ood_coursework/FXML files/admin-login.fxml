@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.ood_coursework.FXML files.AdminLoginController"
+            prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fff3e0;">
+
+    <!-- Header -->
+    <VBox spacing="20" alignment="CENTER" style="-fx-padding: 50;" layoutY="50" layoutX="20">
+        <Label text="Admin Login" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #333333;"/>
+
+        <!-- Username and Password Fields -->
+        <TextField fx:id="usernameField" promptText="Username" prefWidth="200" style="-fx-font-size: 14px; -fx-padding: 5px; -fx-background-color: white;"/>
+        <PasswordField fx:id="passwordField" promptText="Password" prefWidth="200" style="-fx-font-size: 14px; -fx-padding: 5px; -fx-background-color: white;"/>
+
+        <Button text="Login" fx:id="loginButton" prefWidth="200" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 14px;"/>
+        <Button text="Back to Welcome Page" fx:id="backButton" prefWidth="200" style="-fx-background-color: #f44336; -fx-text-fill: white; -fx-font-size: 14px;"/>
+    </VBox>
+
+</AnchorPane>

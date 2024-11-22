@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e1f5fe;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ood_coursework.FXML files.UserLoginController">
+
+    <!-- Header -->
+    <VBox alignment="CENTER" layoutX="20" layoutY="50" prefHeight="357.0" prefWidth="301.0" spacing="20" style="-fx-padding: 50;">
+        <Label style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #333333;" text="User Login" />
+
+        <!-- Username and Password Fields -->
+        <TextField fx:id="usernameField" prefWidth="200" promptText="Username" style="-fx-font-size: 14px; -fx-padding: 5px; -fx-background-color: white;" />
+        <PasswordField fx:id="passwordField" prefWidth="200" promptText="Password" style="-fx-font-size: 14px; -fx-padding: 5px; -fx-background-color: white;" />
+
+        <Button fx:id="loginButton" prefWidth="200" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 14px;" text="Login" />
+        <Button fx:id="backButton" prefWidth="200" style="-fx-background-color: #f44336; -fx-text-fill: white; -fx-font-size: 14px;" text="Back to Welcome Page" />
+        <Button fx:id="createAccountButton" prefWidth="200" style="-fx-background-color: #f44336; -fx-text-fill: white; -fx-font-size: 14px;" text="Create an account " />
+
+    </VBox>
+
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.ood_coursework.FXML files.ViewUsersController"
+            prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #fafafa;">
+
+    <!-- Header -->
+    <HBox spacing="10" alignment="CENTER" style="-fx-padding: 10; -fx-background-color: #336699;">
+        <Label text="View Users" style="-fx-font-size: 20; -fx-text-fill: white;"/>
+        <Button text="Back to Dashboard" fx:id="backButton" style="-fx-background-color: #ff6666; -fx-text-fill: white;"/>
+    </HBox>
+
+    <!-- Table View for Users -->
+    <VBox spacing="10" alignment="CENTER" style="-fx-padding: 20;" layoutY="100" layoutX="50">
+        <TableView fx:id="userTableView" prefWidth="700" prefHeight="250">
+            <columns>
+                <TableColumn text="Username" fx:id="usernameColumn" prefWidth="200"/>
+                <TableColumn text="Email" fx:id="emailColumn" prefWidth="200"/>
+                <TableColumn text="Actions" fx:id="actionColumn" prefWidth="300"/>
+            </columns>
+        </TableView>
+    </VBox>
+
+    <!-- User Details (Optional) -->
+    <VBox spacing="15" alignment="CENTER" style="-fx-padding: 20;" layoutY="400" layoutX="50">
+        <Label text="User Details:" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+        <Label fx:id="userDetailsLabel" style="-fx-font-size: 14px;"/>
+    </VBox>
+
+</AnchorPane>

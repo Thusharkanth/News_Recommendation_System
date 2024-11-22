@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.ood_coursework.FXML files.ManageProfileController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <!-- Header -->
+    <HBox spacing="10" alignment="CENTER" style="-fx-padding: 10; -fx-background-color: #336699;">
+        <Label text="Manage Profile" style="-fx-font-size: 18; -fx-text-fill: white;"/>
+        <Button text="Back" fx:id="backButton" style="-fx-background-color: #ff6666; -fx-text-fill: white;"/>
+    </HBox>
+
+    <!-- Profile Section -->
+    <VBox spacing="15" alignment="CENTER" style="-fx-padding: 20;" layoutY="50" layoutX="20">
+        <!-- User Info Fields -->
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="Username:" style="-fx-font-size: 14;"/>
+            <TextField fx:id="usernameField" style="-fx-font-size: 14;"/>
+        </HBox>
+
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="Email:" style="-fx-font-size: 14;"/>
+            <TextField fx:id="emailField" style="-fx-font-size: 14;"/>
+        </HBox>
+
+        <!-- Preferences Section -->
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="Article Preferences:" style="-fx-font-size: 14;"/>
+            <ComboBox fx:id="preferencesComboBox" prefWidth="200" style="-fx-font-size: 14;">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Technology"/>
+                        <String fx:value="Health"/>
+                        <String fx:value="Sports"/>
+                        <String fx:value="AI"/>
+                        <!-- Add more categories here -->
+                    </FXCollections>
+                </items>
+            </ComboBox>
+        </HBox>
+
+        <!-- Buttons to Save/Cancel -->
+        <HBox spacing="10" alignment="CENTER">
+            <Button text="Save Changes" fx:id="saveButton"/>
+            <Button text="Cancel" fx:id="cancelButton"/>
+        </HBox>
+    </VBox>
+
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.ood_coursework.FXML files.WelcomeController"
+            prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f0f0f0;">
+
+    <!-- Header -->
+    <VBox spacing="20" alignment="CENTER" style="-fx-padding: 50;" layoutY="50" layoutX="20">
+        <Label text="Welcome to the News Recommendation System" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #333333;"/>
+
+        <Button text="User Login" fx:id="userLoginButton" prefWidth="200" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 14px;"/>
+        <Button text="Admin Login" fx:id="adminLoginButton" prefWidth="200" style="-fx-background-color: #f44336; -fx-text-fill: white; -fx-font-size: 14px;"/>
+    </VBox>
+
+</AnchorPane>

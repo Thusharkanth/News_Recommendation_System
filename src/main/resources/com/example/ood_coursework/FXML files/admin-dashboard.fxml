@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.ood_coursework.FXML files.AdminDashboardController"
+            prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #fafafa;">
+
+    <!-- Header -->
+    <HBox spacing="10" alignment="CENTER" style="-fx-padding: 10; -fx-background-color: #336699;">
+        <Label text="Admin Dashboard" style="-fx-font-size: 20; -fx-text-fill: white;"/>
+        <Button text="Logout" fx:id="logoutButton" style="-fx-background-color: #ff6666; -fx-text-fill: white;"/>
+    </HBox>
+
+    <!-- Admin Options -->
+    <VBox spacing="20" alignment="CENTER" style="-fx-padding: 50;" layoutY="100" layoutX="50">
+        <Button text="Add New Article" fx:id="addArticleButton" prefWidth="200" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 14px;"/>
+        <Button text="Edit/Delete Article" fx:id="editDeleteArticleButton" prefWidth="200" style="-fx-background-color: #FFC107; -fx-text-fill: white; -fx-font-size: 14px;"/>
+        <Button text="View User " fx:id="viewUserButton" prefWidth="200" style="-fx-background-color: #FFC107; -fx-text-fill: white; -fx-font-size: 14px;"/>
+    </VBox>
+
+    <!-- Add New Article Form (Initially Hidden) -->
+    <VBox spacing="10" alignment="CENTER" style="-fx-padding: 20;" layoutY="250" layoutX="50" fx:id="addArticleForm" visible="false">
+        <TextField fx:id="articleTitleField" promptText="Title" prefWidth="400"/>
+        <TextArea fx:id="articleContentField" promptText="Content" prefHeight="150" prefWidth="400"/>
+        <ComboBox fx:id="categoryComboBox" prefWidth="200">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Technology"/>
+                    <String fx:value="Health"/>
+                    <String fx:value="Sports"/>
+                    <String fx:value="AI"/>
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <Button text="Save Article" fx:id="saveArticleButton" prefWidth="200"/>
+    </VBox>
+
+    <!-- Table View for Articles (Initially Hidden) -->
+    <VBox spacing="10" alignment="CENTER" style="-fx-padding: 20;" layoutY="250" layoutX="50" fx:id="articleTableView" visible="false">
+        <TableView fx:id="articleTable" prefWidth="600" prefHeight="250">
+            <columns>
+                <TableColumn text="Title" fx:id="titleColumn" prefWidth="300"/>
+                <TableColumn text="Edit" fx:id="editColumn" prefWidth="150"/>
+                <TableColumn text="Delete" fx:id="deleteColumn" prefWidth="150"/>
+            </columns>
+        </TableView>
+    </VBox>
+
+</AnchorPane>
