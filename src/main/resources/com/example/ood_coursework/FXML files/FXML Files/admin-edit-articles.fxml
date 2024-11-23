@@ -13,7 +13,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="278.0" prefWidth="790.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ood_coursework.FXML files.EditDeleteArticleController">
+<AnchorPane prefHeight="278.0" prefWidth="790.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ood_coursework.Controllers.EditDeleteArticleController">
    <ImageView fitHeight="442.0" fitWidth="799.0">
       <image>
          <Image url="@Background%20Images/bg3.jpg" />
