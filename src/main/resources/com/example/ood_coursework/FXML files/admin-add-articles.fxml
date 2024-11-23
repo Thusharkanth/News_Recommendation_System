@@ -18,7 +18,7 @@
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ood_coursework.FXML files.AddArticleController">
    <ImageView fitHeight="456.0" fitWidth="600.0">
       <image>
-         <Image url="@../../../../../../../../../Interface/vecteezy_dark-blue-digital-technology-background-futuristic_.jpg" />
+         <Image url="@Background%20Images/bg3.jpg" />
       </image>
    </ImageView>
 

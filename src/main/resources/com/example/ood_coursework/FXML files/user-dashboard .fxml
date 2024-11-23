@@ -14,7 +14,7 @@
     <children>
       <ImageView fitHeight="455.0" fitWidth="655.0">
          <image>
-            <Image url="@../../../../../../../../../Interface/vector-OCT-2020-80_generated.jpg" />
+            <Image url="@Background%20Images/bg1.jpg" />
          </image>
       </ImageView>
         <!-- Header -->

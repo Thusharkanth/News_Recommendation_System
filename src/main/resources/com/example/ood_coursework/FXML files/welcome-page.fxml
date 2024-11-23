@@ -13,7 +13,7 @@
 <AnchorPane opacity="0.97" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ood_coursework.FXML files.WelcomeController">
    <ImageView fitHeight="479.0" fitWidth="734.0" layoutX="-129.0" layoutY="-56.0">
       <image>
-         <Image url="@../../../../../../../../../Interface/vecteezy_global-network-connection-world-map-point-and-line_7160620.jpg" />
+         <Image url="@Background%20Images/bg4.jpg" />
       </image>
    </ImageView>
         <Button fx:id="adminLoginButton" layoutX="37.0" layoutY="306.0" opacity="0.75" prefHeight="54.0" prefWidth="227.0" style="-fx-background-color: #dee0e3;" text="Admin Login" textAlignment="CENTER">

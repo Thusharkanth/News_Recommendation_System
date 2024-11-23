@@ -15,7 +15,7 @@
 <AnchorPane prefHeight="400.0" prefWidth="427.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ood_coursework.FXML files.AdminLoginController">
    <ImageView fitHeight="414.0" fitWidth="455.0" layoutX="-9.0" layoutY="-10.0">
       <image>
-         <Image url="@../../../../../../../../../Interface/vecteezy_global-network-connection-world-map-point-and-line_7160620.jpg" />
+         <Image url="@Background%20Images/bg4.jpg" />
       </image>
    </ImageView>
 

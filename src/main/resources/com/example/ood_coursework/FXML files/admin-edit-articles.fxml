@@ -14,9 +14,9 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="278.0" prefWidth="790.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ood_coursework.FXML files.EditDeleteArticleController">
-   <ImageView fitHeight="391.0" fitWidth="799.0">
+   <ImageView fitHeight="442.0" fitWidth="799.0">
       <image>
-         <Image url="@../../../../../../../../../Interface/vecteezy_dark-blue-digital-technology-background-futuristic_.jpg" />
+         <Image url="@Background%20Images/bg3.jpg" />
       </image>
    </ImageView>
 
@@ -49,7 +49,7 @@
 
 
     <!-- Table View for Articles -->
-    <VBox alignment="CENTER" layoutX="50" layoutY="100" prefHeight="266.0" prefWidth="715.0" spacing="10" style="-fx-padding: 20;">
+    <VBox alignment="CENTER" layoutX="50" layoutY="100" prefHeight="334.0" prefWidth="715.0" spacing="10" style="-fx-padding: 20;">
         <TableView fx:id="articleTableView" prefHeight="239.0" prefWidth="693.0">
             <columns>
                 <TableColumn fx:id="titleColumn" prefWidth="300" text="Title" />

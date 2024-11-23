@@ -14,10 +14,10 @@
 <AnchorPane prefHeight="494.0" prefWidth="652.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ood_coursework.FXML files.AdminDashboardController">
    <ImageView fitHeight="575.0" fitWidth="736.0" layoutX="-84.0" layoutY="-80.0">
       <image>
-         <Image url="@../../../../../../../../../Interface/vecteezy_dark-blue-digital-technology-background-futuristic_.jpg" />
+         <Image url="@Background%20Images/bg3.jpg" />
       </image>
    </ImageView>
-        <Button fx:id="viewUserButton" layoutX="100.0" layoutY="331.0" opacity="0.75" prefHeight="42.0" prefWidth="234.0" style="-fx-background-color: #dee0e3;" text="View User ">
+        <Button fx:id="viewUserButton" layoutX="100.0" layoutY="327.0" opacity="0.75" prefHeight="42.0" prefWidth="234.0" style="-fx-background-color: #dee0e3;" text="View User ">
       <font>
          <Font name="Arial Black" size="20.0" />
       </font></Button>
@@ -68,7 +68,7 @@
          </LinearGradient>
       </fill>
    </Text>
-   <Button fx:id="viewUserButton1" layoutX="100.0" layoutY="260.0" opacity="0.75" prefHeight="42.0" prefWidth="234.0" style="-fx-background-color: #dee0e3;" text="Edit/Delete  ">
+   <Button fx:id="viewUserButton1" layoutX="100.0" layoutY="262.0" opacity="0.75" prefHeight="42.0" prefWidth="234.0" style="-fx-background-color: #dee0e3;" text="Edit/Delete  ">
       <font>
          <Font name="Arial Black" size="20.0" />
       </font>
