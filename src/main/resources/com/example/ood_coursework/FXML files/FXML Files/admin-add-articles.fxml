@@ -18,7 +18,7 @@
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ood_coursework.Controllers.AddArticleController">
    <ImageView fitHeight="456.0" fitWidth="600.0">
       <image>
-         <Image url="@Background%20Images/bg3.jpg" />
+         <Image url="@../Background%20Images/bg3.jpg" />
       </image>
    </ImageView>
 
@@ -44,7 +44,7 @@
             </stops>
          </LinearGradient>
       </textFill></Label>
-        <Button fx:id="backButton" layoutX="462.0" layoutY="26.0" opacity="0.83" prefHeight="42.0" prefWidth="124.0" style="-fx-background-color: #ff6666; -fx-text-fill: white;" text="Back to Dashboard">
+        <Button fx:id="backToDashBoardButton" layoutX="462.0" layoutY="26.0" onAction="#backButton" opacity="0.83" prefHeight="42.0" prefWidth="124.0" style="-fx-background-color: #ff6666; -fx-text-fill: white;" text="Back to Dashboard">
       <font>
          <Font name="System Bold Italic" size="12.0" />
       </font></Button>
@@ -72,7 +72,7 @@
         </ComboBox>
 
         <!-- Save Button -->
-        <Button fx:id="saveArticleButton" layoutX="186.0" layoutY="390.0" opacity="0.81" prefWidth="200" style="-fx-background-color: #dee0e3;" text="Save Article">
+        <Button fx:id="saveArticleButton" layoutX="186.0" layoutY="390.0" onAction="#saveArticleButton" opacity="0.81" prefWidth="200" style="-fx-background-color: #dee0e3;" text="Save Article">
       <font>
          <Font name="Arial Black" size="20.0" />
       </font></Button>

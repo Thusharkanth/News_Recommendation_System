@@ -17,7 +17,7 @@
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ood_coursework.Controllers.ManageProfileController">
    <ImageView fitHeight="432.0" fitWidth="680.0" layoutX="-47.0" layoutY="-7.0">
       <image>
-         <Image url="@Background%20Images/bg1.jpg" />
+         <Image url="@../Background%20Images/bg1.jpg" />
       </image>
    </ImageView>
 
@@ -43,7 +43,7 @@
             </stops>
          </LinearGradient>
       </textFill></Label>
-        <Button fx:id="backButton" layoutX="480.0" layoutY="305.0" opacity="0.88" prefHeight="42.0" prefWidth="77.0" style="-fx-background-color: #ff6666; -fx-text-fill: white;" text="Back">
+        <Button fx:id="backButton" layoutX="480.0" layoutY="305.0" onAction="#backButton" opacity="0.88" prefHeight="42.0" prefWidth="77.0" style="-fx-background-color: #ff6666; -fx-text-fill: white;" text="Back">
       <font>
          <Font name="System Bold Italic" size="14.0" />
       </font></Button>
@@ -89,11 +89,11 @@
 
         <!-- Buttons to Save/Cancel -->
 
-            <Button fx:id="saveButton" layoutX="80.0" layoutY="305.0" opacity="0.75" style="-fx-background-color: #dee0e3;" text="Save Changes">
+            <Button fx:id="saveButton" layoutX="80.0" layoutY="305.0" onAction="#saveButton" opacity="0.75" style="-fx-background-color: #dee0e3;" text="Save Changes">
       <font>
          <Font name="Arial Black" size="20.0" />
       </font></Button>
-   <Button fx:id="saveButton1" layoutX="317.0" layoutY="305.0" opacity="0.75" style="-fx-background-color: #dee0e3;" text="Cancel">
+   <Button fx:id="ClearChangesButton" layoutX="317.0" layoutY="305.0" onAction="#ClearChangesButton" opacity="0.75" style="-fx-background-color: #dee0e3;" text="Cancel">
       <font>
          <Font name="Arial Black" size="20.0" />
       </font>

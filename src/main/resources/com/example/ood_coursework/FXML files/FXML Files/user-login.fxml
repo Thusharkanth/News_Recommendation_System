@@ -15,7 +15,7 @@
 <AnchorPane prefHeight="461.0" prefWidth="454.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ood_coursework.Controllers.UserLoginController">
    <ImageView fitHeight="471.0" fitWidth="453.0" layoutY="-6.0">
       <image>
-         <Image url="@Background%20Images/bg4.jpg" />
+         <Image url="@../Background%20Images/bg4.jpg" />
       </image>
    </ImageView>
 
@@ -23,7 +23,7 @@
         <TextField fx:id="usernameField" layoutX="105.0" layoutY="130.0" prefHeight="30.0" prefWidth="242.0" promptText="Username" style="-fx-font-size: 14px; -fx-padding: 5px; -fx-background-color: white;" />
         <PasswordField fx:id="passwordField" layoutX="105.0" layoutY="177.0" prefHeight="30.0" prefWidth="241.0" promptText="Password" style="-fx-font-size: 14px; -fx-padding: 5px; -fx-background-color: white;" />
 
-        <Button fx:id="loginButton" layoutX="127.0" layoutY="236.0" opacity="0.75" prefHeight="42.0" prefWidth="200" style="-fx-background-color: #dee0e3;" text="Login">
+        <Button fx:id="loginButton" layoutX="127.0" layoutY="236.0" onAction="#loginButton" opacity="0.75" prefHeight="42.0" prefWidth="200" style="-fx-background-color: #dee0e3;" text="Login">
       <font>
          <Font name="Arial Black" size="20.0" />
       </font></Button>
@@ -48,12 +48,12 @@
          </LinearGradient>
       </fill>
    </Text>
-   <Button fx:id="loginButton1" layoutX="126.0" layoutY="363.0" opacity="0.88" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #dee0e3;" text="Create an account ">
+   <Button fx:id="createAccountButton" layoutX="126.0" layoutY="363.0" onAction="#createAccountButton" opacity="0.88" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #dee0e3;" text="Create an account ">
       <font>
          <Font name="Arial Black" size="15.0" />
       </font>
    </Button>
-   <Button fx:id="loginButton11" layoutX="127.0" layoutY="298.0" opacity="0.75" prefWidth="200" style="-fx-background-color: #dee0e3;" text="Welcome Page ">
+   <Button fx:id="BackTowelcomePageButton" layoutX="127.0" layoutY="298.0" onAction="#BackTowelcomePageButton" opacity="0.75" prefWidth="200" style="-fx-background-color: #dee0e3;" text="Back">
       <font>
          <Font name="Arial Black" size="20.0" />
       </font>

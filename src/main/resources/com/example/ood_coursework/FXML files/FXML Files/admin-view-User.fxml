@@ -16,7 +16,7 @@
 <AnchorPane prefHeight="572.0" prefWidth="805.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ood_coursework.Controllers.ViewUsersController">
    <ImageView fitHeight="607.0" fitWidth="818.0" layoutX="-13.0" layoutY="-23.0">
       <image>
-         <Image url="@Background%20Images/bg3.jpg" />
+         <Image url="@../Background%20Images/bg3.jpg" />
       </image>
    </ImageView>
 
@@ -42,7 +42,7 @@
             </stops>
          </LinearGradient>
       </textFill></Label>
-        <Button fx:id="backButton" layoutX="641.0" layoutY="31.0" opacity="0.81" prefHeight="39.0" prefWidth="134.0" style="-fx-background-color: #ff6666; -fx-text-fill: white;" text="Back to Dashboard" textAlignment="CENTER">
+        <Button fx:id="backButton" layoutX="641.0" layoutY="31.0" onAction="#backButton" opacity="0.81" prefHeight="39.0" prefWidth="134.0" style="-fx-background-color: #ff6666; -fx-text-fill: white;" text="Back to Dashboard" textAlignment="CENTER">
       <font>
          <Font name="System Bold Italic" size="12.0" />
       </font></Button>

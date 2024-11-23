@@ -18,7 +18,7 @@
     <children>
       <ImageView fitHeight="467.0" fitWidth="637.0">
          <image>
-            <Image url="@Background%20Images/bg1.jpg" />
+            <Image url="@../Background%20Images/bg1.jpg" />
          </image>
       </ImageView>
         <!-- Header -->
@@ -43,7 +43,7 @@
                </stops>
             </LinearGradient>
          </textFill></Label>
-            <Button fx:id="backButton" layoutX="506.0" layoutY="26.0" prefHeight="38.0" prefWidth="83.0" style="-fx-background-color: #ff6666; -fx-text-fill: white;" text="Back" />
+            <Button fx:id="backButton" layoutX="506.0" layoutY="26.0" onAction="#backButton" prefHeight="38.0" prefWidth="83.0" style="-fx-background-color: #ff6666; -fx-text-fill: white;" text="Back" />
 
 
            <!-- Article Display -->
@@ -72,16 +72,16 @@
 
                <!-- Navigation Buttons -->
 
-                <Button fx:id="previousButton" layoutX="402.0" layoutY="398.0" opacity="0.75" style="-fx-background-color: #dee0e3;" text="Previous" textAlignment="RIGHT">
+                <Button fx:id="previousButton" layoutX="402.0" layoutY="398.0" onAction="#previousButton" opacity="0.75" style="-fx-background-color: #dee0e3;" text="Previous" textAlignment="RIGHT">
          <font>
             <Font name="Arial Black" size="20.0" />
          </font></Button>
-      <Button fx:id="previousButton1" layoutX="260.0" layoutY="398.0" opacity="0.75" style="-fx-background-color: #dee0e3;" text=" Next" textAlignment="RIGHT">
+      <Button fx:id="NextButton1" layoutX="260.0" layoutY="398.0" onAction="#NextButton1" opacity="0.75" style="-fx-background-color: #dee0e3;" text=" Next" textAlignment="RIGHT">
          <font>
             <Font name="Arial Black" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="previousButton2" layoutX="402.0" layoutY="340.0" opacity="0.75" style="-fx-background-color: #dee0e3;" text="Submit Rating" textAlignment="RIGHT">
+      <Button fx:id="SubmitRattingButton" layoutX="402.0" layoutY="340.0" onAction="#SubmitRattingButton" opacity="0.75" style="-fx-background-color: #dee0e3;" text="Submit Rating" textAlignment="RIGHT">
          <font>
             <Font name="Arial Black" size="16.0" />
          </font>
