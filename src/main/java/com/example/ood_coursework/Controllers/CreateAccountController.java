@@ -7,17 +7,19 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import static com.example.ood_coursework.ProjectManager.ProjectManager.navigateTo;
+import static com.example.ood_coursework.ProjectManager.ProjectManager.showAlert;
 
 public class CreateAccountController {
     @FXML
     public void createAccountButton(ActionEvent event) {
         // call the method to verify the detail
-        handleSignIn(event);
+        boolean isValid= handleSignIn();
 
         // directed to a new interface
-        Stage currentStage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
-        navigateTo("/com/example/ood_coursework/FXML files/FXML Files/user-dashboard .fxml","User DashBoard  ",currentStage);
-
+        if (isValid) {
+            Stage currentStage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+            navigateTo("/com/example/ood_coursework/FXML files/FXML Files/user-dashboard .fxml", "User DashBoard  ", currentStage);
+        }
     }
 
     @FXML
@@ -42,23 +44,27 @@ public class CreateAccountController {
 
     private String user_username, user_email, user_password, user_confirmPassword;
 
-    public void handleSignIn(ActionEvent event) {
+    public boolean handleSignIn() {
         user_username=usernameField.getText();
         user_email=emailField.getText();
         user_password=passwordField.getText();
         user_confirmPassword=confirmPasswordField.getText();
 
         if (user_username.isEmpty() || user_email.isEmpty() || user_password.isEmpty() || user_confirmPassword.isEmpty()) {
+            showAlert("Information","Information","Empty field present ","Very field should be completed ");
             System.out.println("Username or email or password is empty");
-            return;
+            return false;
         }
         if (!user_password.equals(user_confirmPassword)) {
+            showAlert("error","Error","Password mismatch", " Password did not mactch");
             System.out.println("Passwords do not match");
+            return false;
         }
 
         System.out.println("Sign Up Successful!");
         System.out.println("Username: " + user_username);
         System.out.println("Email: " + user_email);
+        return true;
 
     }
 

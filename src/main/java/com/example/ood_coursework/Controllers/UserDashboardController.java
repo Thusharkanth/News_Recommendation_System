@@ -6,10 +6,12 @@ import javafx.fxml.FXML;
 import javafx.stage.Stage;
 
 import static com.example.ood_coursework.ProjectManager.ProjectManager.navigateTo;
+import static com.example.ood_coursework.ProjectManager.ProjectManager.showAlert;
 
 public class UserDashboardController {
     @FXML
     public void logoutButton(ActionEvent event) {
+        showAlert("CONFIRMATION", "confermation", "Confirm ", "Do you want to log Out.");
         ProjectManager.logoutProcess(event);
     }
 

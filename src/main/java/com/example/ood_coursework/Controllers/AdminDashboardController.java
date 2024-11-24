@@ -4,8 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.stage.Stage;
 
-import static com.example.ood_coursework.ProjectManager.ProjectManager.logoutProcess;
-import static com.example.ood_coursework.ProjectManager.ProjectManager.navigateTo;
+import static com.example.ood_coursework.ProjectManager.ProjectManager.*;
 
 public class AdminDashboardController {
     @FXML
@@ -17,6 +16,7 @@ public class AdminDashboardController {
 
     @FXML
     public void logoutButton(ActionEvent event) {
+        showAlert("Confrimation","Confimation ","confirm","Do you want to Log Out ");
         logoutProcess(event);
     }
 
