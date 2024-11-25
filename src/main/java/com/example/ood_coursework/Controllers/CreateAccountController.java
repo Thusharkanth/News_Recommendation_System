@@ -42,11 +42,14 @@ public class CreateAccountController {
     private PasswordField confirmPasswordField;
 
 
-    private String user_username, user_email, user_password, user_confirmPassword;
+    private String user_username;
+    private String user_email;
+    private String user_password;
+    private String user_confirmPassword;
 
     public boolean handleSignIn() {
         user_username=usernameField.getText();
-        user_email=emailField.getText();
+        user_email = emailField.getText();
         user_password=passwordField.getText();
         user_confirmPassword=confirmPasswordField.getText();
 

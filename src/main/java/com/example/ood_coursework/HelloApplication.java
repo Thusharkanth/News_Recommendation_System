@@ -1,5 +1,7 @@
 package com.example.ood_coursework;
 
+import com.example.ood_coursework.DBConnector.MongoDBConnector;
+import com.mongodb.client.MongoDatabase;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -16,6 +18,9 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.show();
     }
+    // Create MongoDB connection and UserService
+    MongoDatabase database = MongoDBConnector.getDatabase();
+
 
     public static void main(String[] args) {
         launch();
