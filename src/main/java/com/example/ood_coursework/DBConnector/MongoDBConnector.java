@@ -7,7 +7,6 @@ import com.mongodb.client.MongoDatabase;
 
 public class MongoDBConnector {
 
-
         private static MongoClient mongoClient; // MongoClient instance
         private static MongoDatabase database; // Database instance
         private static final String CONNECTION_STRING = "mongodb://localhost:27017"; // MongoDB connection string
