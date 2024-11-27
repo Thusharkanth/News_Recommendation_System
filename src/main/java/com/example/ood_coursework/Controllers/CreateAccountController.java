@@ -28,6 +28,7 @@ public class CreateAccountController {
         Stage currentStage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
         navigateTo("/com/example/ood_coursework/FXML files/FXML Files/user-login.fxml","User Login ",currentStage);
 
+
     }
 
     @FXML
