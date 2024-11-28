@@ -23,7 +23,7 @@
       </ImageView>
         <!-- Header -->
 
-            <Label layoutX="60.0" layoutY="13.0" prefHeight="74.0" prefWidth="266.0" text="Articles">
+            <Label layoutX="28.0" layoutY="8.0" prefHeight="74.0" prefWidth="266.0" text="Articles">
             <font>
                <Font name="System Bold" size="50.0" />
             </font>
@@ -49,15 +49,15 @@
            <!-- Article Display -->
 
             <Label fx:id="articleTitle" style="-fx-font-size: 16; -fx-font-weight: bold;" />
-            <TextArea fx:id="articleContent" editable="false" layoutX="21.0" layoutY="117.0" prefHeight="200" prefWidth="595.0" style="-fx-font-size: 14;" wrapText="true" />
+            <TextArea fx:id="articleContentArea" editable="false" layoutX="28.0" layoutY="159.0" prefHeight="200" prefWidth="595.0" style="-fx-font-size: 14;" wrapText="true" />
 
                <!-- Rating Section -->
 
-                <Label layoutX="87.0" layoutY="344.0" text="Rate this Article:" textAlignment="CENTER" textFill="WHITE">
+                <Label layoutX="80.0" layoutY="371.0" text="Rate this Article:" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="18.0" />
                </font></Label>
-                <ComboBox fx:id="ratingComboBox" layoutX="252.0" layoutY="340.0" opacity="0.87" prefHeight="35.0" prefWidth="102.0">
+                <ComboBox fx:id="ratingComboBox" layoutX="252.0" layoutY="371.0" opacity="0.87" prefHeight="27.0" prefWidth="102.0">
                     <items>
                         <FXCollections fx:factory="observableArrayList">
                             <String fx:value="1" />
@@ -72,21 +72,31 @@
 
                <!-- Navigation Buttons -->
 
-                <Button fx:id="previousButton" layoutX="402.0" layoutY="398.0" onAction="#previousButton" opacity="0.75" style="-fx-background-color: #dee0e3;" text="Previous" textAlignment="RIGHT">
+                <Button fx:id="previousButton" layoutX="402.0" layoutY="419.0" onAction="#previousButton" opacity="0.75" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: #dee0e3;" text="Previous" textAlignment="RIGHT">
          <font>
             <Font name="Arial Black" size="20.0" />
          </font></Button>
-      <Button fx:id="NextButton1" layoutX="260.0" layoutY="398.0" onAction="#NextButton1" opacity="0.75" style="-fx-background-color: #dee0e3;" text=" Next" textAlignment="RIGHT">
+      <Button fx:id="NextButton1" layoutX="260.0" layoutY="419.0" onAction="#NextButton1" opacity="0.75" style="-fx-background-color: #dee0e3;" text="Next" textAlignment="RIGHT">
          <font>
             <Font name="Arial Black" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="SubmitRattingButton" layoutX="402.0" layoutY="340.0" onAction="#SubmitRattingButton" opacity="0.75" style="-fx-background-color: #dee0e3;" text="Submit Rating" textAlignment="RIGHT">
+      <Button fx:id="SubmitRattingButton" layoutX="402.0" layoutY="367.0" onAction="#SubmitRattingButton" opacity="0.75" prefHeight="26.0" prefWidth="145.0" style="-fx-background-color: #dee0e3;" text="Submit Rating" textAlignment="RIGHT">
          <font>
             <Font name="Arial Black" size="16.0" />
          </font>
       </Button>
+      <Label fx:id="titleLabel" layoutX="28.0" layoutY="103.0" text="Title" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="authorLabel" layoutX="518.0" layoutY="121.0" text="Author" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
 
-        
+
     </children>
 </AnchorPane>
