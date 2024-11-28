@@ -13,6 +13,7 @@ import org.bson.conversions.Bson;
 import java.util.List;
 
 import static com.example.ood_coursework.ProjectManager.ProjectManager.navigateTo;
+import static com.mongodb.client.model.Filters.and;
 import static com.mongodb.client.model.Filters.eq;
 
 public class ViewArticlesController {
@@ -92,9 +93,16 @@ public class ViewArticlesController {
 
             if (hasRated){
                 // If the user has already rated, update the rating using the DBOperations method
-                Bson filter = eq("username",userID);
+                Bson filter = and(eq("username",userID), eq("articleId",articleID));
                 Bson update = new Document("$set", new Document("rating",rating));
                 boolean success = DBOperations.updateDocument("rating",filter,update);
+
+                if (success){
+                    articleContentArea.setText("Rating submitted successfully!");
+                }
+                else {
+                    articleContentArea.setText("Rating submitted failed!");
+                }
 
 
             }
@@ -125,7 +133,7 @@ public class ViewArticlesController {
     //Helper method to check if the user has already rated the current article
 
     private boolean hasUserRated(String userID, String articleID) {
-        Bson filter = eq("username",userID);
+        Bson filter = and(eq("username",userID), eq("articleId",articleID));
         Document ratingDocument = DBOperations.findDocument("rating",filter);
 
         if (ratingDocument != null && ratingDocument.getString("articleId").equals(articleID)) {
